@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,40 +12,43 @@
 </head>
 
 <body>
-    <main>
-        <h1>Rock Paper Scissors</h1>
+    <div class = "page">
+        <main>
+            <h1>Rock Paper Scissors</h1>
 
-        <section class="s-1">
-            <div class="selection">
-                <div>
-                    <p>Player</p>
-                    <div class="player_score">0</div>  
-                    <div class="player_select"></div>
+            <section class="s-1">
+                <div class="selection">
+                    <div>
+                        <p>Player</p>
+                        <div class="player_score">0</div>  
+                        <div class="player_select"></div>
+                    </div>
+                    <div>
+                        <p>Computer</p>
+                        <div class="computer_score">0</div> 
+                        <div class="computer_select"></div>
+                    </div> 
                 </div>
+                <div class="out-winner"></div>
+                <button class="restartBtn" onclick = "restartGame()">Restart</button>
+            </section>
+            
+            <section class="s-2">
                 <div>
-                    <p>Computer</p>
-                    <div class="computer_score">0</div> 
-                    <div class="computer_select"></div>
-                </div> 
-            </div>
-            <div class="out-winner"></div>
-            <button class="restartBtn" onclick = "restartGame()">Restart</button>
-        </section>
-        
-        <section class="s-2">
-            <div>
-                <p class="text">Please choose rock, paper, or scissors.</p>
-                <div class="image_choice">
-                    <img class="hands" id="rock" src="images/rock.jpeg">
-                    <img class="hands" id="paper" src="images/paper.jpeg">
-                    <img class="hands" id="scissors" src="images/scissors.jpeg">
+                    <p class="text">Please choose rock, paper, or scissors.</p>
+                    <div class="image_choice">
+                        <img class="hands" id="rock" src="images/rock.jpeg">
+                        <img class="hands" id="paper" src="images/paper.jpeg">
+                        <img class="hands" id="scissors" src="images/scissors.jpeg">
+                    </div>
                 </div>
-            </div>
-    </main>
-    <footer>
-        <p>Copyright Julia Cherkasova</p>
-        <p>2023</p>
-    </footer>
+        </main>
+        <footer>
+            <p>Copyright Julia Cherkasova</p>
+            <p>2023</p>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

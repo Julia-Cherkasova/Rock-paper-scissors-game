@@ -4,6 +4,7 @@
 }
 
 body{
+    height: 100%;
     text-align: center;
     background-color: rgb(241, 231, 227);
     margin-top: 40px;
@@ -13,11 +14,14 @@ body{
 footer{
     margin-top: 40px;
     font-size: 15px;
+    margin-top: auto;
+    padding-bottom: 20px;
 }
 
 h1{
     margin-bottom: 40px;
 }
+
 img{
     width: 160px;
     height: 160px;
@@ -27,23 +31,34 @@ img{
 .hand{
     border: 2px solid rgb(136, 102, 61);  
 }
+
 .image_choice{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
+
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+}
+
 .player_score,
 .computer_score{
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
+
 .player_select,
 .computer_select{
     font-size: 20px;
     font-weight: bold;
 }
+
 .restartBtn{
     width: 100px;
     height: 40px;
@@ -51,8 +66,8 @@ img{
     border: 1px solid rgb(72, 45, 10);
     border-radius: 5px;
     font-size: 17px;
-
 }
+
 .selection{
     display: flex;
     justify-content: center;
@@ -87,3 +102,37 @@ img{
     font-weight: 700;
     margin-bottom: 30px;
 }
+
+/* Media queries */
+/* phones with a big screen */
+
+/* phones */
+
+@media screen 
+and (max-width: 991px) {
+
+    h1{
+        font-size: 25px;
+    }
+    img{
+        height: 110px;
+        width: 110px;
+    }
+    .image_choice{
+        gap: 0px;
+    }
+    .selection{
+        gap: 70px;
+        margin-bottom: 25px;
+    }
+    .text{
+        padding: 0 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .out-winner{
+        margin-bottom: 25px;
+        text-align: center;
+    }
+}
+
