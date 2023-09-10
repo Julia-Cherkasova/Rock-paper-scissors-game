@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    color: rgb(57, 36, 6);
+}
+
+body{
+    text-align: center;
+    background-color: rgb(241, 231, 227);
+    margin-top: 40px;
+    font-family: "Courier Prime";
+}
+
+footer{
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+h1{
+    margin-bottom: 40px;
+}
+img{
+    width: 160px;
+    height: 160px;
+    border-radius: 10px;
+}
+
+.hand{
+    border: 2px solid rgb(136, 102, 61);  
+}
+.image_choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+.player_score,
+.computer_score{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.player_select,
+.computer_select{
+    font-size: 20px;
+    font-weight: bold;
+}
+.restartBtn{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: 1px solid rgb(72, 45, 10);
+    border-radius: 5px;
+    font-size: 17px;
+
+}
+.selection{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    font-size: 20px;
+    height: 110px;
+}
+
+.start{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 40px;
+    border: 1px solid rgb(136, 102, 61); 
+    border-radius: 3px;
+    font-size: 18px;
+    color: rgb(57, 36, 6);
+}
+.text{
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-style: italic;
+}
+.unknown{
+    width: 130px;
+    height: 130px;
+}
+.out-winner{
+    height: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
