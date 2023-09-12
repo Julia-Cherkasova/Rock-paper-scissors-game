@@ -50,14 +50,14 @@ function gameRound(){
 }
 
 function gameResult(){
-        if (computerScore === 6){
+        if (computerScore === 4){
             outWinner.innerHTML = "I'm the winner of the game!";
 
             rockBtn.onclick = null;
             paperBtn.onclick = null;
             scissorsBtn.onclick = null;
 
-        } else if (playerScore === 6){
+        } else if (playerScore === 4){
             outWinner.innerHTML = "Congratulations! You win the game!"
 
             rockBtn.onclick = null;
