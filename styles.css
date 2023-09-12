@@ -136,6 +136,10 @@ and (max-width: 991px) {
         font-size: 15px;
     }
 
+    .s-0 p{
+        padding: 0px 15px;
+    }
+
     .text{
         padding: 0 15px;
         margin-top: 10px;
