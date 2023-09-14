@@ -37,15 +37,15 @@ function gameRound(){
     if (computerChoice == "Rock" && playerSelect == "scissors" ||
         computerChoice == "Scissors" && playerSelect == "paper" ||
         computerChoice == "Paper" && playerSelect == "rock"){
-            outWinner.innerHTML = "You Lose!"
+            outWinner.innerHTML = "You Lose. Try again!"
             computerScoreOut.innerHTML = computerScore++;
    } else if (computerChoice == "Scissors" && playerSelect == "rock" ||
         computerChoice == "Paper" && playerSelect == "scissors" ||
         computerChoice == "Rock" && playerSelect == "paper"){
-            outWinner.innerHTML = "You win!!!";
+            outWinner.innerHTML = "You win! Let's play again!";
             playerScoreOut.innerHTML = playerScore++;
    } else if (computerChoice == playerSelect.charAt(0).toUpperCase() + playerSelect.slice(1)){
-       outWinner.innerHTML = "It's a tie!";
+       outWinner.innerHTML = "It's a tie. Try again!";
    }
 }
 
