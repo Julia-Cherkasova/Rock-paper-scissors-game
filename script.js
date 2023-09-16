@@ -82,3 +82,5 @@ function restartGame() {
 rockBtn.onclick = playerChoice;
 paperBtn.onclick = playerChoice;
 scissorsBtn.onclick = playerChoice; 
+
+screen.orientation.lock(landscape);
