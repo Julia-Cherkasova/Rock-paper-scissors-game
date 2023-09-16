@@ -152,7 +152,7 @@ and (max-width: 991px)
         text-align: center;
     }
 }
-/* 
+
 @media screen and (max-width: 991px) and (orientation: landscape) {
     html {
       transform: rotate(-90deg);
@@ -163,5 +163,5 @@ and (max-width: 991px)
       top: 100%;
       left: 0;
     }
-  } */
+  }
 
